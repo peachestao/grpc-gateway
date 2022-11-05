@@ -17,9 +17,9 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/casing"
-	"github.com/grpc-ecosystem/grpc-gateway/v2/internal/descriptor"
-	openapi_options "github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2/options"
+	"github.com/peachestao/grpc-gateway/internal/casing"
+	"github.com/peachestao/grpc-gateway/internal/descriptor"
+	openapi_options "github.com/peachestao/grpc-gateway/protoc-gen-openapiv2/options"
 	"google.golang.org/genproto/googleapis/api/annotations"
 	"google.golang.org/genproto/googleapis/api/visibility"
 	"google.golang.org/protobuf/encoding/protojson"
@@ -1025,6 +1025,9 @@ func renderServiceTags(services []*descriptor.Service, reg *descriptor.Registry)
 		}
 		if opts != nil {
 			tag.Description = opts.Description
+			if len(opts.Name) > 0 {
+				tag.Name = opts.Name
+			}
 			if opts.ExternalDocs != nil {
 				tag.ExternalDocs = &openapiExternalDocumentationObject{
 					Description: opts.ExternalDocs.Description,
@@ -1382,6 +1385,16 @@ func renderServices(services []*descriptor.Service, paths openapiPathsObject, re
 					tag := svc.GetName()
 					if pkg := svc.File.GetPackage(); pkg != "" && reg.IsIncludePackageInTags() {
 						tag = pkg + "." + tag
+					}
+					opts, err := getServiceOpenAPIOption(reg, svc)
+					if err != nil {
+						glog.Error(err)
+						return nil
+					}
+					if opts != nil {
+						if len(opts.Name) > 0 {
+							tag = opts.Name
+						}
 					}
 					operationObject.Tags = []string{tag}
 				}
