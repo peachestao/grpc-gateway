@@ -1026,6 +1026,9 @@ func renderServiceTags(services []*descriptor.Service, reg *descriptor.Registry)
 		}
 		if opts != nil {
 			tag.Description = opts.Description
+			if len(opts.Name) > 0 {
+				tag.Name = opts.Name
+			}
 			if opts.ExternalDocs != nil {
 				tag.ExternalDocs = &openapiExternalDocumentationObject{
 					Description: opts.ExternalDocs.Description,
@@ -1383,6 +1386,16 @@ func renderServices(services []*descriptor.Service, paths openapiPathsObject, re
 					tag := svc.GetName()
 					if pkg := svc.File.GetPackage(); pkg != "" && reg.IsIncludePackageInTags() {
 						tag = pkg + "." + tag
+					}
+					opts, err := getServiceOpenAPIOption(reg, svc)
+					if err != nil {
+						glog.Error(err)
+						return nil
+					}
+					if opts != nil {
+						if len(opts.Name) > 0 {
+							tag = opts.Name
+						}
 					}
 					operationObject.Tags = []string{tag}
 				}
