@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/protoc-gen-openapiv2/internal/genopenapi"
+	"github.com/peachestao/grpc-gateway/v2/protoc-gen-openapiv2/internal/genopenapi"
 	"gopkg.in/yaml.v3"
 )
 

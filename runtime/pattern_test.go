@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/utilities"
+	"github.com/peachestao/grpc-gateway/v2/utilities"
 )
 
 const (

@@ -123,7 +123,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/peachestao/grpc-gateway/runtime"
+	"github.com/peachestao/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 

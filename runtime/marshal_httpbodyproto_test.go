@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/runtime"
+	"github.com/peachestao/grpc-gateway/v2/runtime"
 	"google.golang.org/genproto/googleapis/api/httpbody"
 	"google.golang.org/protobuf/encoding/protojson"
 )

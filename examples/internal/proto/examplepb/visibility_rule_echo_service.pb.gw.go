@@ -13,8 +13,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/peachestao/grpc-gateway/runtime"
-	"github.com/peachestao/grpc-gateway/utilities"
+	"github.com/peachestao/grpc-gateway/v2/runtime"
+	"github.com/peachestao/grpc-gateway/v2/utilities"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/grpclog"

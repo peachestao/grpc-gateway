@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/peachestao/grpc-gateway/utilities"
+	"github.com/peachestao/grpc-gateway/v2/utilities"
 	"google.golang.org/genproto/protobuf/field_mask"
 	"google.golang.org/grpc/grpclog"
 	"google.golang.org/protobuf/encoding/protojson"

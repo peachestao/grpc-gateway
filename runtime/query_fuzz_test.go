@@ -7,9 +7,9 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/runtime"
-	"github.com/peachestao/grpc-gateway/runtime/internal/examplepb"
-	"github.com/peachestao/grpc-gateway/utilities"
+	"github.com/peachestao/grpc-gateway/v2/runtime"
+	"github.com/peachestao/grpc-gateway/v2/runtime/internal/examplepb"
+	"github.com/peachestao/grpc-gateway/v2/utilities"
 )
 
 func FuzzPopulateQueryParameters(f *testing.F) {

@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/peachestao/grpc-gateway/runtime"
-	"github.com/peachestao/grpc-gateway/runtime/internal/examplepb"
-	"github.com/peachestao/grpc-gateway/utilities"
+	"github.com/peachestao/grpc-gateway/v2/runtime"
+	"github.com/peachestao/grpc-gateway/v2/runtime/internal/examplepb"
+	"github.com/peachestao/grpc-gateway/v2/utilities"
 	"google.golang.org/genproto/protobuf/field_mask"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/testing/protocmp"

@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/golang/glog"
-	examples "github.com/peachestao/grpc-gateway/examples/internal/proto/examplepb"
-	standalone "github.com/peachestao/grpc-gateway/examples/internal/proto/standalone"
-	"github.com/peachestao/grpc-gateway/runtime"
+	examples "github.com/peachestao/grpc-gateway/v2/examples/internal/proto/examplepb"
+	standalone "github.com/peachestao/grpc-gateway/v2/examples/internal/proto/standalone"
+	"github.com/peachestao/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"
 )
 

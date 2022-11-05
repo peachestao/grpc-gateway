@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/runtime"
+	"github.com/peachestao/grpc-gateway/v2/runtime"
 	"google.golang.org/genproto/googleapis/rpc/errdetails"
 	statuspb "google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc/codes"

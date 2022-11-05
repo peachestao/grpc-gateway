@@ -3,7 +3,7 @@ package gengateway
 import (
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/internal/descriptor"
+	"github.com/peachestao/grpc-gateway/v2/internal/descriptor"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/descriptorpb"
 )

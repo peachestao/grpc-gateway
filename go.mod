@@ -1,4 +1,4 @@
-module github.com/peachestao/grpc-gateway/v2
+module github.com/peachestao/grpc-gateway/v2/v2
 
 go 1.17
 

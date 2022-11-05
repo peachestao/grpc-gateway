@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/peachestao/grpc-gateway/utilities"
+	"github.com/peachestao/grpc-gateway/v2/utilities"
 	"google.golang.org/grpc/grpclog"
 )
 

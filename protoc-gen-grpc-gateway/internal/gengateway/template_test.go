@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/internal/descriptor"
-	"github.com/peachestao/grpc-gateway/internal/httprule"
+	"github.com/peachestao/grpc-gateway/v2/internal/descriptor"
+	"github.com/peachestao/grpc-gateway/v2/internal/httprule"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/descriptorpb"
 )

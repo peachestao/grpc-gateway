@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/peachestao/grpc-gateway/internal/descriptor"
-	"github.com/peachestao/grpc-gateway/protoc-gen-openapiv2/internal/genopenapi"
+	"github.com/peachestao/grpc-gateway/v2/internal/descriptor"
+	"github.com/peachestao/grpc-gateway/v2/protoc-gen-openapiv2/internal/genopenapi"
 	"gopkg.in/yaml.v3"
 
 	"google.golang.org/protobuf/encoding/prototext"

@@ -7,9 +7,9 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/peachestao/grpc-gateway/examples/internal/proto/examplepb"
-	standalone "github.com/peachestao/grpc-gateway/examples/internal/proto/standalone"
-	gwruntime "github.com/peachestao/grpc-gateway/runtime"
+	"github.com/peachestao/grpc-gateway/v2/examples/internal/proto/examplepb"
+	standalone "github.com/peachestao/grpc-gateway/v2/examples/internal/proto/standalone"
+	gwruntime "github.com/peachestao/grpc-gateway/v2/runtime"
 	_ "google.golang.org/genproto/googleapis/rpc/errdetails"
 	"google.golang.org/grpc"
 )

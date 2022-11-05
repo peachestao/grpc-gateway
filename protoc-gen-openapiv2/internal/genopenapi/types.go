@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/peachestao/grpc-gateway/internal/descriptor"
+	"github.com/peachestao/grpc-gateway/v2/internal/descriptor"
 )
 
 type param struct {
